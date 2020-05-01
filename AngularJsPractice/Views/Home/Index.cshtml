@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<body ng-controller="MainController">
+    <h1>{{message}}</h1>
+
+    <div>{{ error }}</div>
+
+    {{ countdown }}
+    <form name="searchUser" ng-submit="search(username)">
+        <input type="search" required ng-model="username" />
+        <input type="submit" value="Search">
+    </form>
+
+    <div ng-include="'userdetails.html'" ng-show="user"></div>
+
+</body>
+
