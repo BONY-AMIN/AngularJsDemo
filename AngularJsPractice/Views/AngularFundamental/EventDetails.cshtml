@@ -32,7 +32,7 @@
         <br />
         <h2>Session</h2>
         <ul>
-            <li ng-repeat="session in event.sessions" class="thumbnail">
+            <li ng-repeat="session in event.sessions | orderBy:'name'" class="thumbnail">
                 <div class="row">
                     <div class="col-md-1 well">
                         <div class="btn btn-info" ng-click="votingup(session)">

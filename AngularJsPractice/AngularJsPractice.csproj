@@ -174,11 +174,6 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Controller\app.js" />
-    <Content Include="Scripts\Controller\EventController.js" />
-    <Content Include="Scripts\Controller\github.js" />
-    <Content Include="Scripts\Controller\HelloWorldCntrl.js" />
-    <Content Include="Scripts\Controller\Script.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-touch.min.js.map" />

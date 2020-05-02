@@ -18,19 +18,19 @@
         imageUrl: "/file/ip10.jpg",
         sessions: [
             {
-                name: "Angular is a fun",
+                name: "Angular",
                 creator: "Amin",
                 poems: "I want to make a huge experties",
                 upvotecount:0
             },
             {
-                name: "Try to learn",
+                name: "Try",
                 creator: "Amin",
                 poems: "I want to make a huge experties",
                  upvotecount: 0
             },
             {
-                name: "Just do it",
+                name: "Just fun",
                  creator: "Amin",
                 poems: "I want to make a huge experties",
                 upvotecount: 0
