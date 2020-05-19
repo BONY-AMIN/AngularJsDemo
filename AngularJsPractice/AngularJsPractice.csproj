@@ -132,6 +132,7 @@
     <Content Include="AngularScript\Demo\Controller\EventController.js" />
     <Content Include="AngularScript\Demo\Controller\github.js" />
     <Content Include="AngularScript\Demo\Controller\HelloWorldCntrl.js" />
+    <Content Include="AngularScript\Demo\Controller\AburakibModel.js" />
     <Content Include="AngularScript\Demo\Controller\Script.js" />
     <Content Include="AngularScript\Demo\CSS\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -967,6 +968,7 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\AngularFundamental\Index.cshtml" />
     <Content Include="Views\AngularFundamental\EventDetails.cshtml" />
+    <Content Include="Views\AngularFundamental\AbuRakib.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

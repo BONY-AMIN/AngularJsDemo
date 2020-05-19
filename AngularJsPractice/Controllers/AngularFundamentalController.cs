@@ -17,5 +17,9 @@ namespace AngularJsPractice.Controllers
         {
             return View();
         }
+        public ActionResult AbuRakib()
+        {
+            return View();
+        }
     }
 }

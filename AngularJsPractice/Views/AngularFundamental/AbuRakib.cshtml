@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "AbuRakib";
+}
+
+    <div class="row" ng-controller="abcll">
+        <h3>{{try}}</h3>
+        <h2>{{students.name}}</h2>
+        <h2>{{students.age}}</h2>
+        <div ng-init="msg1='Rakib'">
+            <input type="text" ng-model="msg1" />
+            <h2 ng-bind="msg1" ng-show="msg1"></h2>
+        </div>
+        @*<div>
+            <h2>Fruits:</h2>
+            <ul>
+                <li ng-repeat="frt in fruits"><h2>{{frt}}</h2></li>
+            </ul>
+        </div>*@
+        @*<div>
+
+            <ul> <h2>Employee:</h2>
+                <li ng-repeat="emp in emoloyee">
+                <h2>{{emp.name}}</h2>
+                <h2>{{emp.age}}</h2>
+                <h2>{{emp.profession}}</h2>
+                </li>
+            </ul>
+        </div>*@
+
+        <div>
+            <button class="btn btn-success" ng-click="show()">Show</button>
+            <button class="btn btn-success" ng-click="hide()">Hide</button>
+            <h2>Search</h2>
+            <input type="text" ng-model="search" />
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th><h2>Name</h2></th>
+                        <th><h2>Age</h2></th>
+                        <th><h2>Profession</h2></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="emp in emoloyee | filter:search">
+                        <td> <h2>{{emp.name}}</h2></td>
+                        <td> <h2>{{emp.age | age}}</h2></td>
+                        <td> <h2>{{emp.profession}}</h2></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <ul>
+                <h1>Countries:</h1>
+                <li ng-repeat="coun in city">
+                    <h2>{{coun.name}}</h2>
+                    <ul>
+                        <h2>Cities:</h2>
+                        <li ng-repeat="ct in coun.cities | orderBy:'name'">
+
+                            <h3>{{ct.name}}</h3>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <input type="number" ng-model="inout1" />
+            <input type="number" ng-model="inout2" />
+            <input type="button" ng-click="Add(inout1,inout2)" value="Add" />
+            <h3>{{result}}</h3>
+            <h3>{{result2}}</h3>
+        </div>
+
+        <div>
+            <h2>Total todos: {{getTotalTodos()}}</h2>
+            <ul class="unstyled">
+                <li ng-repeat="todo in todos">
+                    <input type="checkbox" ng-model="todo.done">
+                    <span class="done-{{todo.done}}">{{todo.text}}</span>
+                </li>
+            </ul>
+            <form class="form-horizontal">
+                <input type="text" ng-model="formTodoText" ng-model-instant>
+                <button class="btn" ng-click="addTodo()"><i class="icon-plus"></i>Add</button>
+            </form>
+
+            <button class="btn-large" ng-click="clearCompleted()"><i class="icon-trash"></i>Clear Completed</button>
+        </div>
+    </div>
